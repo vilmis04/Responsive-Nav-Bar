@@ -71,42 +71,72 @@ nav li:hover {
     height: 5px;
     background-color: black;
     margin: 6px 0;
-  }
+}
 
-  .link-trigger-container {
+.link-trigger-container {
     margin-right: 3rem;
 }
 
-  .link-trigger-container,
-  .rotated,
-  .hide-links,
-  .show-links {
-    transition: 0.5s;
-  }
+.link-trigger-container,
+.rotated,
+.hide-links,
+.show-links {
+transition: 0.5s;
+}
 
-  .rotated {
-      transform: rotate(90deg);
-  }
+.rotated {
+    transform: rotate(90deg);
+}
 
-  .hide-links {
-      height: 0;
-      margin: 0;
-      overflow: hidden;
-  }
+.hide-links {
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+}
 
-  .show-links {
+.show-links {
     height: auto;
     background: white;
     margin-top: 100px;
-    overflow: hidden;  
 }
 
-  button {
-      background: transparent;
-      border: none;
-      cursor: pointer;
-  }
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
 
-  button:active {
-      background: transparent;
-  }
+
+@media screen and (min-width: 768px) {
+    #nav-trigger {
+        display: none;
+    }
+    #links {
+        height: auto;
+        background: transparent;
+        /* margin-top: 100px; */
+        transition: none;
+        z-index: 20;
+    }
+    header {
+        z-index: -10;
+    }
+    nav ul {
+        flex-direction: row;
+        width: 100vw;
+        height: 100px;
+    }
+    nav li,
+    nav a {
+        display: flex;
+        width: auto;
+        height: 100%;
+        align-items: center;
+    }
+    nav ul,.flex-column {
+        flex-direction: row;
+        border: none;
+        justify-content: flex-end;
+    }
+
+}
