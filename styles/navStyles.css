@@ -1,0 +1,112 @@
+:root {
+    --hover-color: aqua;
+}
+
+header  {
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    padding: 0 1rem;
+    border-bottom: 1px solid grey;
+    background: white;
+}
+
+header img {
+    height: 50px;
+}
+
+.flex-row,
+.flex-column {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justified-center {
+    justify-content: center;
+}
+
+.aligned-center {
+    align-items: center;
+}
+
+.centered {
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-bottom: grey 1px solid;
+}
+
+nav li {
+    height: 2.5rem;
+    width: 100%;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+nav li:hover {
+    background-color: var(--hover-color);
+}
+
+.link-trigger {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
+  .link-trigger-container {
+    margin-right: 3rem;
+}
+
+  .link-trigger-container,
+  .rotated,
+  .hide-links,
+  .show-links {
+    transition: 0.5s;
+  }
+
+  .rotated {
+      transform: rotate(90deg);
+  }
+
+  .hide-links {
+      height: 0;
+      margin: 0;
+      overflow: hidden;
+  }
+
+  .show-links {
+    height: auto;
+    background: white;
+    margin-top: 100px;
+    overflow: hidden;  
+}
+
+  button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+  }
+
+  button:active {
+      background: transparent;
+  }
